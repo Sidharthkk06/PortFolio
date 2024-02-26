@@ -1,0 +1,371 @@
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+}
+
+@media screen and (min-width:992px) {
+    .navbar {
+        background: linear-gradient(to right, #000000, #111613, #202c22, #2f4131, #405742);
+        padding: 0;
+    }
+
+    .navbar .navbar-nav .nav-link {
+        padding: 1rem;
+        color: #95b391;
+    }
+}
+
+.navbar-brand {
+    font-size: xx-large;
+    font-weight: 525;
+    color: #355d39
+}
+
+.navbar-brand span {
+    margin-left: 10px;
+    color: #355d39;
+}
+
+.navbar-nav .ms-auto .mb-2 .mb-lg-0 li a {
+    color: #95b391;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.navbar .navbar-nav .nav-item {
+    position: relative;
+}
+
+.navbar .navbar-nav .nav-item::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    content: '';
+    background-color: #95b391;
+    width: 0%;
+    height: 4px;
+    transition: all .5s;
+}
+
+.navbar .navbar-nav .nav-item:hover::after {
+    width: 80%
+}
+
+.home {
+    margin-top: 3.6rem;
+    background: linear-gradient(to right, #000000, #111613, #202c22, #2f4131, #405742);
+    width: 100%;
+    padding-right: 0;
+    margin-right: 0 auto;
+}
+
+.home .container-fluid {
+    max-width: 1366px;
+    padding-top: 7.6rem;
+    padding-bottom: 8rem;
+    padding-left: 3rem;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.social {
+    margin-top: 40px;
+    font-size: larger;
+}
+
+span {
+    color: #edecdf;
+}
+
+.aboutme {
+    position: relative;
+    width: 100%;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    background: #000000;
+}
+
+.aboutme .container-fluid {
+    max-width: 1366px;
+    padding-top: 7.5rem;
+    padding-bottom: 7rem;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.aboutme .col-lg-6 {
+    padding: 0;
+}
+
+.aboutme .section-header {
+    margin-bottom: 30px;
+}
+
+.aboutme .section-header {
+    position: relative;
+}
+
+.aboutme .section-header h1 {
+    color: #87818c;
+}
+
+.aboutme .about-content {
+    max-width: 1366px;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+    padding-left: 2rem;
+}
+
+.aboutme .about-text p {
+    font-size: 18px;
+    color: #edecdf;
+    text-align: justify;
+}
+
+.aboutme .skills {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.aboutme .skill-name {
+    margin-top: 15px;
+}
+
+.aboutme .skill-name p {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #87818c;
+}
+
+.aboutme .skill-name p:last-child {
+    float: right;
+}
+
+.aboutme .progress {
+    height: 10px;
+    border-radius: 10px;
+    background: #ddd;
+}
+
+.aboutme .progress .progress-bar {
+    background: #355d39;
+    border-radius: 10px;
+    transition: 2s;
+}
+
+.btn {
+    padding: 12px 25px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #000000;
+    background: #355d39;
+    border-radius: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+    background-color: #ddd;
+    color: #355d39;
+}
+
+.projects {
+    background: black;
+    padding: 45px 0 15px
+}
+
+.projects .container-fluid {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.projects .section-header {
+    position: relative;
+    margin-bottom: 60px;
+    color: #87818c;
+}
+
+.card-title {
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.card-text {
+    letter-spacing: 1px;
+    text-align: justify;
+}
+
+.experience {
+    background: linear-gradient(to right, #000000, #111613, #202c22, #2f4131, #405742);
+    width: 100%;
+    padding: 45px 0 15px;
+}
+
+.experience .section-header {
+    position: relative;
+    margin-bottom: 45px;
+}
+
+.experience .section-header h1 {
+    color: #edecdf;
+    padding-top: 20px;
+}
+
+.text-center {
+    text-align: center 1 !important;
+}
+
+.experience .timeline {
+    position: relative;
+    width: 100%;
+}
+
+.experience .timeline .timeline-item {
+    position: relative;
+    background: inherit;
+    width: 50%;
+    margin-bottom: 30px;
+}
+
+.experience .timeline .timeline-item::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 46px;
+    right: 10px;
+    z-index: 1;
+    border: 10px solid;
+    border-color: transparent transparent transparent #95b391;
+}
+
+.experience .timeline .timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 48px;
+    right: -8px;
+    background: #382e2f;
+    border: 2px solid #87818c;
+    border-radius: 16px;
+    z-index: 1;
+}
+
+.experience .timeline .timeline-text {
+    padding: 30px;
+    background: #f7f2f2;
+    position: relative;
+    border-right: 5px solid #95b391;
+    box-shadow: 0 0 60px rgba(250, 249, 249, 0.08);
+}
+
+.experience .timeline .timeline-text p {
+    text-align: justify;
+}
+
+.experience .timeline .timeline-item.left {
+    left: 0;
+    padding-right: 30px;
+}
+
+.experience .timeline .timeline-date {
+    position: absolute;
+    width: 100%;
+    top: 44px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #d8d8d8;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    z-index: 1;
+}
+
+.experience .timeline .timeline-item.left .timeline-date {
+    text-align: left;
+    left: calc(100% + 55px);
+}
+
+.experience .timeline .timeline-item.right {
+    left: 50%;
+    padding-left: 30px;
+}
+
+.experience .timeline .timeline-item.right .timeline-date {
+    text-align: right;
+    right: calc(100% + 55px);
+}
+
+.experience .timeline .timeline-item.right::before {
+    left: 10px;
+    border-color: transparent #95b391 transparent transparent;
+}
+
+.experience .timeline .timeline-item.right::after {
+    left: -8px;
+}
+
+.experience .timeline .timeline-item.right .timeline-text {
+    border-right: none;
+    border-left: 5px solid #95b391;
+}
+
+.experience .timeline::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background: #87818c;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1px;
+}
+
+.contactme {
+    background: linear-gradient(to right, #000000, #111613, #202c22, #2f4131, #405742);;
+    width: 100%
+}
+
+.contactme .container-fluid {
+    max-width: 1366px;
+    padding-top: 7.6rem;
+    padding-bottom: 8rem;
+    padding-left: 3rem;
+}
+
+.contactme .section-header {
+    padding-bottom: 40px;
+}
+
+.location,
+.email,
+.phonenumber {
+    padding-top: 10px;
+    color: #95b391;
+}
+
+.contactme-text {
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+    color: #edecdf;
+}
