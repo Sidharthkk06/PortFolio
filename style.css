@@ -9,15 +9,17 @@ body {
         background: linear-gradient(to right, #000000, #111613, #202c22, #2f4131, #405742);
         padding: 0;
     }
-
-    .navbar .navbar-nav .nav-item:hover::after {
-        width: 100%
-    }
 }
 
 .navbar {
     background: linear-gradient(to right, #000000, #111613, #202c22, #2f4131, #405742);
     padding: 0;
+}
+
+.navbar .navbar-expand-lg .fixed-top {
+    position: relative;
+    top: 0;
+    z-index: -6;
 }
 
 .navbar-brand {
@@ -64,7 +66,6 @@ body {
 }
 
 .home {
-    margin-top: 3.6rem;
     background: linear-gradient(to right, #000000, #111613, #202c22, #2f4131, #405742);
     width: 100%;
     padding-right: 0;
@@ -73,7 +74,7 @@ body {
 
 .home .container-fluid {
     max-width: 1366px;
-    padding-top: 7.6rem;
+    padding-top: 6rem;
     padding-bottom: 8rem;
     padding-left: 3rem;
 }
@@ -108,7 +109,7 @@ span {
 
 .aboutme .container-fluid {
     max-width: 1366px;
-    padding-top: 7.5rem;
+    padding-top: 6rem;
     padding-bottom: 7rem;
     padding-left: 0;
     padding-right: 0;
@@ -194,12 +195,17 @@ span {
 
 .projects {
     background: black;
-    padding: 45px 0 15px
+    position: relative;
+    width: 100%;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .projects .container-fluid {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    max-width: 1366px;
+    padding-top: 145px;
+    padding-bottom: 145px;
 }
 
 .projects .section-header {
@@ -358,15 +364,19 @@ span {
     margin-left: -1px;
 }
 
+
 .contactme {
     background: linear-gradient(to right, #000000, #111613, #202c22, #2f4131, #405742);
-    ;
-    width: 100%
+    position: relative;
+    width: 100%;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .contactme .container-fluid {
     max-width: 1366px;
-    padding-top: 7.6rem;
+    padding-top: 145px;
     padding-bottom: 8rem;
     padding-left: 3rem;
 }
