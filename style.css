@@ -215,6 +215,20 @@ span {
     text-align: justify;
 }
 
+/* Responsive timelines on small screens */
+@media screen and (max-width:600px) {
+    .experience .timeline::after {
+        left: 31px;
+    }
+
+    /* Full-width containers */
+    .experience .container {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+}
+
 .experience {
     background: linear-gradient(to right, #000000, #111613, #202c22, #2f4131, #405742);
     width: 100%;
@@ -342,7 +356,8 @@ span {
 }
 
 .contactme {
-    background: linear-gradient(to right, #000000, #111613, #202c22, #2f4131, #405742);;
+    background: linear-gradient(to right, #000000, #111613, #202c22, #2f4131, #405742);
+    ;
     width: 100%
 }
 
