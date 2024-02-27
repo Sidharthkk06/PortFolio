@@ -4,9 +4,8 @@ body {
     font-weight: 500;
 }
 
-.container-fluid{
-    padding-top: 8rem;
-    padding-bottom: 8rem;
+.container-fluid {
+    padding: 8rem 2rem;
 }
 
 .row {
@@ -89,10 +88,6 @@ h1 {
     width: 100%;
     padding-right: 0;
     margin-right: 0 auto;
-}
-
-.home .container-fluid {
-    padding-left: 3rem;
 }
 
 .home p {
