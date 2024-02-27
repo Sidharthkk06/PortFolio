@@ -89,6 +89,14 @@ h1 {
     font-weight: 600;
 }
 
+.home p {
+    padding-top: 30px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #f7f2f2;
+    text-align: justify;
+}
+
 .social {
     margin-top: 40px;
     font-size: larger;
