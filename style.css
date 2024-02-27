@@ -52,6 +52,7 @@ h1 {
 
 .navbar-brand span {
     margin-left: 10px;
+    padding-top: 10px;
     color: #355d39;
 }
 
@@ -98,7 +99,7 @@ h1 {
 
 .home p {
     padding-top: 30px;
-    font-size: 18px;
+    font-size: 16px;
     letter-spacing: 1px;
     color: #f7f2f2;
     text-align: justify;
