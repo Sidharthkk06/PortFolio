@@ -4,6 +4,11 @@ body {
     font-weight: 500;
 }
 
+.container-fluid{
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
 .row {
     margin-right: 0;
     margin-left: 0;
@@ -87,8 +92,6 @@ h1 {
 }
 
 .home .container-fluid {
-    padding-top: 6rem;
-    padding-bottom: 8rem;
     padding-left: 3rem;
 }
 
@@ -120,18 +123,6 @@ span {
     background: #000000;
 }
 
-.aboutme .container-fluid {
-    max-width: 1366px;
-    padding-top: 6rem;
-    padding-bottom: 7rem;
-    padding-left: 0;
-    padding-right: 0;
-}
-
-.aboutme .col-lg-6 {
-    padding: 0;
-}
-
 .aboutme .section-header {
     margin-bottom: 30px;
 }
@@ -142,13 +133,6 @@ span {
 
 .aboutme .section-header h1 {
     color: #87818c;
-}
-
-.aboutme .about-content {
-    max-width: 1366px;
-    padding-top: 4rem;
-    padding-bottom: 3rem;
-    padding-left: 2rem;
 }
 
 .aboutme .about-text p {
@@ -360,12 +344,6 @@ span {
     margin-right: 0;
 }
 
-.projects .container-fluid {
-    max-width: 1366px;
-    padding-top: 145px;
-    padding-bottom: 145px;
-}
-
 .projects .section-header {
     position: relative;
     margin-bottom: 60px;
@@ -390,11 +368,6 @@ span {
     margin-top: 0;
     margin-left: 0;
     margin-right: 0;
-}
-
-.contactme .container-fluid {
-    padding-top: 145px;
-    padding-bottom: 8rem;
 }
 
 .contactme .section-header {
