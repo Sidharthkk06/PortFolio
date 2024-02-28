@@ -151,7 +151,13 @@ h1 {
 }
 
 .aboutme .section-header h1 {
-    color: #87818c;
+    color: #36454f;
+    font-size: 2rem;
+    text-align: center !important;
+}
+
+.aboutme .about-text {
+    padding-top: 3.5rem;
 }
 
 .aboutme .about-text p {
@@ -159,6 +165,18 @@ h1 {
     color: #edecdf;
     text-align: justify;
     letter-spacing: 1px;
+}
+
+.aboutme .photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0rem 4rem
+
+}
+
+.aboutme .photo img {
+    width: 300px;
 }
 
 .aboutme .skill-name {
@@ -239,7 +257,7 @@ h1 {
 }
 
 .text-center {
-    text-align: center 1 !important;
+    text-align: center !important;
 }
 
 .experience .timeline {
