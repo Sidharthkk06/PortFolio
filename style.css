@@ -142,11 +142,13 @@ h1 {
     background: #000000;
 }
 
-.aboutme .section-header {
-    margin-bottom: 30px;
+.aboutme .container-fluid {
+    padding-bottom: 1rem;
+    margin-bottom: 0;
 }
 
 .aboutme .section-header {
+    margin-bottom: 30px;
     position: relative;
 }
 
@@ -179,11 +181,27 @@ h1 {
     width: 300px;
 }
 
-.aboutme .skill-name {
+/* ----------  Skills  ---------- */
+
+.skills {
+    background: #000000;
+}
+
+.skills .section-header {
+    padding-bottom: 3rem;
+}
+
+.skills .section-header h1 {
+    color: #36454f;
+    font-size: 2rem;
+    text-align: center !important;
+}
+
+.skills .skill-name {
     margin-top: 15px;
 }
 
-.aboutme .skill-name p {
+.skills .skill-name p {
     display: inline-block;
     margin-bottom: 5px;
     font-size: 20px;
@@ -191,17 +209,17 @@ h1 {
     color: #87818c;
 }
 
-.aboutme .skill-name p:last-child {
+.skills .skill-name p:last-child {
     float: right;
 }
 
-.aboutme .progress {
+.skills .progress {
     height: 10px;
     border-radius: 10px;
     background: #ddd;
 }
 
-.aboutme .progress .progress-bar {
+.skills .progress .progress-bar {
     background: #355d39;
     border-radius: 10px;
     transition: 2s;
