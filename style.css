@@ -1,3 +1,6 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+}
 body {
     margin: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -244,20 +247,6 @@ h1 {
 
 /* ----------  Experience  ---------- */
 
-/* Responsive timelines on small screens */
-@media screen and (max-width:800px) {
-    .experience .timeline::after {
-        left: 31px;
-    }
-
-    /* Full-width containers */
-    .experience .container {
-        width: 100%;
-        padding-left: 70px;
-        padding-right: 25px;
-    }
-}
-
 .experience {
     background: linear-gradient(to right, #000000, #111613, #202c22, #2f4131, #405742);
     width: 100%;
@@ -274,27 +263,42 @@ h1 {
     padding-top: 20px;
 }
 
-.text-center {
-    text-align: center !important;
-}
-
-.experience .timeline {
+.timeline {
     position: relative;
     width: 100%;
 }
 
-.experience .timeline .timeline-item {
+/* Vertical Line */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background: #87818c;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1px;
+}
+
+.timeline-item {
     position: relative;
     background: inherit;
     width: 50%;
-    margin-bottom: 30px;
+    padding: 10px 40px;
 }
 
-.experience .timeline .timeline-item::before {
+.experience .timeline-item .left {
+    visibility: visible;
+    animation-delay: 0.1s;
+    animation-name: SlideInLeft;
+}
+
+/* Arrow on the side of timeline-item */
+.timeline-item::after {
     content: "";
     position: absolute;
-    width: 0;
-    height: 0;
+    width: 25;
+    height: 25;
     top: 46px;
     right: 10px;
     z-index: 1;
@@ -302,7 +306,8 @@ h1 {
     border-color: transparent transparent transparent #95b391;
 }
 
-.experience .timeline .timeline-item::after {
+/* Dot on the central Line */
+.experience .timeline-item::after {
     content: '';
     position: absolute;
     width: 16px;
@@ -315,7 +320,7 @@ h1 {
     z-index: 1;
 }
 
-.experience .timeline .timeline-text {
+.experience .timeline .timeline-card {
     padding: 30px;
     background: #f7f2f2;
     position: relative;
@@ -323,7 +328,7 @@ h1 {
     box-shadow: 0 0 60px rgba(250, 249, 249, 0.08);
 }
 
-.experience .timeline .timeline-text p {
+.experience .timeline .timeline-card p {
     text-align: justify;
 }
 
@@ -373,15 +378,25 @@ h1 {
     border-left: 5px solid #95b391;
 }
 
-.experience .timeline::after {
-    content: '';
-    position: absolute;
-    width: 2px;
-    background: #87818c;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    margin-left: -1px;
+/* Responsive timelines on small screens */
+@media (max-width:800px) {
+    .experience .timeline::after {
+        left:8px;
+    }
+    .experience .timeline .timeline-item {
+        width: 100%;
+        padding-left: 38px;
+    }
+    .experience .timeline .timeline-item .left {
+        padding-right: 0;
+    }
+    
+    /* Full-width containers */
+    .experience .container {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
 }
 
 /* ----------  Projects  ---------- */
