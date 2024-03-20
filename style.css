@@ -1,6 +1,3 @@
-*, ::after, ::before {
-    box-sizing: border-box;
-}
 body {
     margin: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -97,6 +94,14 @@ h1 {
     width: 100%;
     padding-right: 0;
     margin-right: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+}
+
+.home .container {
+    text-align: left;
 }
 
 .home .name h1 {
@@ -113,7 +118,7 @@ h1 {
     }
 }
 
-.home .iam p{
+.home .iam p {
     color: #87818c;
     font-size: 25px;
     font-weight: 600;
@@ -177,7 +182,6 @@ h1 {
     justify-content: center;
     align-items: center;
     padding: 4rem 0rem 4rem
-
 }
 
 .aboutme .photo img {
@@ -242,161 +246,6 @@ h1 {
 .btn:hover {
     background-color: #ddd;
     color: #355d39;
-}
-
-
-/* ----------  Experience  ---------- */
-
-.experience {
-    background: linear-gradient(to right, #000000, #111613, #202c22, #2f4131, #405742);
-    width: 100%;
-    padding: 45px 0 15px;
-}
-
-.experience .section-header {
-    position: relative;
-    margin-bottom: 45px;
-}
-
-.experience .section-header h1 {
-    color: #edecdf;
-    padding-top: 20px;
-}
-
-.timeline {
-    position: relative;
-    width: 100%;
-}
-
-/* Vertical Line */
-.timeline::after {
-    content: '';
-    position: absolute;
-    width: 4px;
-    background: #87818c;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    margin-left: -1px;
-}
-
-.timeline-item {
-    position: relative;
-    background: inherit;
-    width: 50%;
-    padding: 10px 40px;
-}
-
-.experience .timeline-item .left {
-    visibility: visible;
-    animation-delay: 0.1s;
-    animation-name: SlideInLeft;
-}
-
-/* Arrow on the side of timeline-item */
-.timeline-item::after {
-    content: "";
-    position: absolute;
-    width: 25;
-    height: 25;
-    top: 46px;
-    right: 10px;
-    z-index: 1;
-    border: 10px solid;
-    border-color: transparent transparent transparent #95b391;
-}
-
-/* Dot on the central Line */
-.experience .timeline-item::after {
-    content: '';
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    top: 48px;
-    right: -8px;
-    background: #382e2f;
-    border: 2px solid #87818c;
-    border-radius: 16px;
-    z-index: 1;
-}
-
-.experience .timeline .timeline-card {
-    padding: 30px;
-    background: #f7f2f2;
-    position: relative;
-    border-right: 5px solid #95b391;
-    box-shadow: 0 0 60px rgba(250, 249, 249, 0.08);
-}
-
-.experience .timeline .timeline-card p {
-    text-align: justify;
-}
-
-.experience .timeline .timeline-item.left {
-    left: 0;
-    padding-right: 30px;
-}
-
-.experience .timeline .timeline-date {
-    position: absolute;
-    width: 100%;
-    top: 44px;
-    font-size: 16px;
-    font-weight: 600;
-    color: #d8d8d8;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    z-index: 1;
-}
-
-.experience .timeline .timeline-item.left .timeline-date {
-    text-align: left;
-    left: calc(100% + 55px);
-}
-
-.experience .timeline .timeline-item.right {
-    left: 50%;
-    padding-left: 30px;
-}
-
-.experience .timeline .timeline-item.right .timeline-date {
-    text-align: right;
-    right: calc(100% + 55px);
-}
-
-.experience .timeline .timeline-item.right::before {
-    left: 10px;
-    border-color: transparent #95b391 transparent transparent;
-}
-
-.experience .timeline .timeline-item.right::after {
-    left: -8px;
-}
-
-.experience .timeline .timeline-item.right .timeline-text {
-    border-right: none;
-    border-left: 5px solid #95b391;
-}
-
-/* Responsive timelines on small screens */
-@media (max-width:800px) {
-    .experience .timeline::after {
-        left:8px;
-    }
-    .experience .timeline .timeline-item {
-        width: 100%;
-        padding-left: 38px;
-    }
-    .experience .timeline .timeline-item .left {
-        padding-right: 0;
-    }
-    
-    /* Full-width containers */
-    .experience .container {
-        width: 100%;
-        padding-left: 70px;
-        padding-right: 25px;
-    }
 }
 
 /* ----------  Projects  ---------- */
